@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint . --ext .ts --cache --fix",
+    "lint:check": "eslint . --ext .ts --cache"
+  },
   "author": "Taras Svitlychnyi",
   "license": "ISC",
   "description": "",
@@ -19,5 +22,9 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.45.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "dotenv": "^17.2.3"
   }
 }
